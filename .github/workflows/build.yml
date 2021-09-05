@@ -1,0 +1,20 @@
+name: Build & publish repo
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '1 0,12 * * *' 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: debian:bullseye
+    env:
+      GH_ACTIONS_INSTALLED_BUILD_DEPS: evolution libbluray podman
+      GH_ACTIONS_INSTALLED_PKGS: aptly devscripts git lsb-release npm
+    steps:
+      - run: sed -i 's/deb http:\/\/deb.debian.org\/debian bullseye main/deb http:\/\/deb.debian.org\/debian bullseye main contrib non-free\ndeb-src http:\/\/deb.debian.org\/debian bullseye main contrib non-free/' /etc/apt/sources.list
+      - run: apt-get update && apt-get install -y $GH_ACTIONS_INSTALLED_PKGS && apt-get build-dep -y $GH_ACTIONS_INSTALLED_BUILD_DEPS
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm run build
