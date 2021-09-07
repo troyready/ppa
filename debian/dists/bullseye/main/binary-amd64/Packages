@@ -1,0 +1,683 @@
+Package: evolution
+Priority: optional
+Section: gnome
+Installed-Size: 475
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 3.38.3-1+ztroyppa1
+Replaces: evolution-common (<< 3.20.4-1~)
+Provides: imap-client, mail-reader
+Depends: libc6 (>= 2.14), libcamel-1.2-62 (>= 3.38.3), libclutter-gtk-1.0-0 (>= 0.91.8), libecal-2.0-1 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.0.0), libical3 (>= 3.0.0), libnotify4 (>= 0.7.0), libsoup2.4-1 (>= 2.42), libwebkit2gtk-4.0-37 (>= 2.28), libxml2 (>= 2.7.4), evolution-common (= 3.38.3-1+ztroyppa1), evolution-data-server (>= 3.38.3), evolution-data-server (<< 3.39), dbus, psmisc
+Recommends: evolution-plugins, evolution-plugin-bogofilter | evolution-plugin-spamassassin, evolution-plugin-pstimport, yelp
+Suggests: evolution-ews, evolution-plugins-experimental, gnupg, network-manager
+Breaks: evolution-common (<< 3.20.4-1~)
+Filename: pool/main/e/evolution/evolution_3.38.3-1+ztroyppa1_amd64.deb
+Size: 322040
+MD5sum: 8d9b362fb61fcec3ba41490e699b020d
+SHA1: 05e17d65d75fb374a77bd1f8f50d785673caa7c4
+SHA256: c64643fdc5ec6e130ca70b2a91fd76c87d3375b3d7ee7ede336f97ada5554d45
+SHA512: ffdcba7a9734f8cfe112f11bd37452865938883826a4ba7bda33ee4b11f1d03480bb4f1aa76bf5c98e623c0a35d94e74b886ea3877d270786d3fab5e970369f4
+Description: groupware suite with mail client and organizer
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ Additional features include integration with Exchange
+ servers, newsgroup client, LDAP support and web calendars
+ .
+ The following plugins belonging to the "base" set are included.
+  - calendar-file
+  - calendar-http
+  - itip-formatter
+  - default-source
+  - addressbook-file
+  - mark-all-read
+  - publish-calendar
+  - caldav
+  - imap-features
+  - google-account-setup
+  - webdav-account-setup
+  - calendar-weather
+  - sa-junk-plugin
+  - bogo-junk-plugin
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-common
+Priority: optional
+Section: gnome
+Installed-Size: 59888
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: evolution
+Filename: pool/main/e/evolution/evolution-common_3.38.3-1+ztroyppa1_all.deb
+Size: 7350220
+MD5sum: 95d24fee9fe948030871eb1a2a0e0b60
+SHA1: 7efb4a4b9d730336c265b7f49e3f750095333837
+SHA256: f9b5dc179601bc178e7b0d051c085795c316863bef7f9debb7c212b9d9b0c87d
+SHA512: 6354488b7a22f7615010bdabcaacac747a759e9435bda8557cb4ca063edebfd16928d243467c95faf788387b8e2a43c72661190bb487ac42a970c43d1c7982e4
+Description: architecture independent files for Evolution
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package contains the architecture independent files needed
+ by the evolution package.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 153
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 118944
+MD5sum: 0bac1a0e5b131e0a7bdffacbb3ab727e
+SHA1: 47fd695176f2c88be9a8fc1465ca0db24961f9a6
+SHA256: 96d74f50c7b219b5963cce329cf779eaa0b73f4438106f3dd099cba67d5a3684
+SHA512: 9f0a1338d69696bc11fad34c0a3c4ba7a5a5f592d9fff6312b250106273a8dad0f81828d8d7b4ebb702900fed85cc92302b4f93dd463da63fa4a6944536be520
+Description: debug symbols for evolution
+Auto-Built-Package: debug-symbols
+Build-Ids: 8669fd370bacd1096420d7d0853bb6222542de79 8912b5aa69f974d801a09b1c2df3f468fd98f5ce
+
+Package: evolution-dev
+Priority: optional
+Section: devel
+Installed-Size: 9483
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: libevolution (= 3.38.3-1+ztroyppa1), libenchant-2-dev (>= 2.2.0), libcamel1.2-dev, libebackend1.2-dev, libgtk-3-dev (>= 3.10), libgnome-desktop-3-dev, libwebkit2gtk-4.0-dev (>= 2.13.90), libedataserver1.2-dev, libedataserverui1.2-dev
+Filename: pool/main/e/evolution/evolution-dev_3.38.3-1+ztroyppa1_amd64.deb
+Size: 619176
+MD5sum: b81b698cbde959176c849a85baedb178
+SHA1: b9efa4ac3940d822d15bbe7f7b685bbc85f1b428
+SHA256: fb304b642704993ccecfe43689b695acf5ca61b1fb705dc130c8a7de5f303785
+SHA512: 56a3cacde5800e4541913402b3838b6ceed71262cc4ee53691ed43f43df5e180ebf4be4ce515e4430e95752f54473e76f09dec8658bce811015a60b7c4e21a44
+Description: development library files for Evolution
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package contains header and static library files
+ for developing Evolution components.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugin-bogofilter
+Priority: optional
+Section: gnome
+Installed-Size: 82
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Replaces: evolution-common (<< 3.25.91), libevolution (<< 3.25.91)
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.0.0), evolution (= 3.38.3-1+ztroyppa1), bogofilter
+Breaks: evolution-common (<< 3.25.91), libevolution (<< 3.25.91)
+Filename: pool/main/e/evolution/evolution-plugin-bogofilter_3.38.3-1+ztroyppa1_amd64.deb
+Size: 43912
+MD5sum: 78f613847473704159171323b68bfc73
+SHA1: a8ca6486643799aa979f4568038717d5cb743691
+SHA256: 5d50866ef9f4d3e9662e698a6ead89e745280353dbf7beed7ed5d5726e968153
+SHA512: ced116093b2a5e839b127082b35f8dc232f9a07dbdc533d55b065e7cde0f615d57ccfad7b9304704c3ff32501203575513cb2238711f8bfce2c252de742fbb40
+Description: standard plugins for Evolution (bogofilter)
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package includes the bogofilter spam filter module for Evolution.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugin-bogofilter-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 44
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution-plugin-bogofilter (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugin-bogofilter-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 27948
+MD5sum: 518fa9d4502bbef8bc86e7697ba5b9e6
+SHA1: 711aec8f1ac7b975ebbdcb1616eb313309632ece
+SHA256: 38c0c61e3fda2eeb8db20efba24b5b1241bb214af90a4a08e7d48e3623c9cea9
+SHA512: fe9e4aab22b77347399656ba23b3efef354a40dc97b2f14a57e4728c023dd06deb11b1526583166687617b9eeadab66653e4395c40b2a7e7eca1febf090c4f1a
+Description: debug symbols for evolution-plugin-bogofilter
+Auto-Built-Package: debug-symbols
+Build-Ids: 4c7f28a33316e1e92fc6a5e4fd73d5a507f0e53e
+
+Package: evolution-plugin-pstimport
+Priority: optional
+Section: gnome
+Installed-Size: 119
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Replaces: evolution-common (<< 3.25.91), libevolution (<< 3.25.91)
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.38.3), libebook-1.2-20 (>= 3.38.3), libebook-contacts-1.2-3 (>= 3.16.2), libecal-2.0-1 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.0.0), libical3 (>= 3.0.0), libpst4 (>= 0.6.54), evolution (= 3.38.3-1+ztroyppa1)
+Breaks: evolution-common (<< 3.25.91), evolution-plugins (<< 3.25.91)
+Filename: pool/main/e/evolution/evolution-plugin-pstimport_3.38.3-1+ztroyppa1_amd64.deb
+Size: 55484
+MD5sum: ff90baae2231c9ce88478be85fbd8711
+SHA1: 334d83bd5d714b2f487e7c81b6a76f99390b6dfe
+SHA256: 512992be69979a62c84decc6480fba3aaabd350a9abc817eaf7ef6bf9b6bf59b
+SHA512: 7cde9f1db8dfbbede3ebf0e611227680e3db14c982a70613037fa8da02d9db14eb2d2032aab7f88cb00a4de2dbcc02bd5a552ffeadaa8f6055a4071cda277329
+Description: standard plugins for Evolution (pstimport)
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package includes a plugin for Evolution that enables importing
+ Microsoft Outlook messages from a PST file.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugin-pstimport-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 86
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution-plugin-pstimport (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugin-pstimport-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 64656
+MD5sum: e1d10a135be118e5b52ac26fd97e3833
+SHA1: 79bebec1f52e528697b2dc39fd99cef0095c0d7e
+SHA256: 327c9b326791a33b77df756e6a895b43ac103d3cc7f7a7e58797ec3765ebb5f9
+SHA512: 2037f0a72df3c65f3f8d669d6eee47a97bf13ca68bb7c68060d14e10ee1b67d0fd3cc91ebd46305486d43fbae2d9c6c02047ed88743390410ccac2c7c4119f0a
+Description: debug symbols for evolution-plugin-pstimport
+Auto-Built-Package: debug-symbols
+Build-Ids: 7a3674a75edc8bd79cc7035f6719313d8f588710
+
+Package: evolution-plugin-spamassassin
+Priority: optional
+Section: gnome
+Installed-Size: 82
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Replaces: evolution-common (<< 3.25.91), libevolution (<< 3.25.91)
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.0.0), evolution (= 3.38.3-1+ztroyppa1), spamassassin
+Breaks: evolution-common (<< 3.25.91), libevolution (<< 3.25.91)
+Filename: pool/main/e/evolution/evolution-plugin-spamassassin_3.38.3-1+ztroyppa1_amd64.deb
+Size: 44364
+MD5sum: 4508fd8bc6c987b1aca418feeb67a0d1
+SHA1: c3cbf6fd992ec7d56d9eefd4d6c9312503f1ace2
+SHA256: 2d25f16ac2cc8b8281a7d5149369401d935de7122fcd8392fca32936adcde28b
+SHA512: f792ed3a609bbbeaaff78e32227cf2a8e85b406a8b5d77f99f5e68fa12e5338b1afbf77ba7e9290cd6bf36a104e780ef533759e35a037a7e3763c60ade884b48
+Description: standard plugins for Evolution (spamassassin)
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package includes the spamassasin spam filter module for Evolution.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugin-spamassassin-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 46
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution-plugin-spamassassin (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugin-spamassassin-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 30688
+MD5sum: d96b73d7cc0156fce9735e02d3c523ce
+SHA1: 7c59c1af94f69acb6e8e5f98f36a11fd8cb8455b
+SHA256: 885fc31eee4e56c49b2f1953446aab39ce2a96493098f8c566f697220aafea9d
+SHA512: c1c359c3ae8965ddda5ff33eb38ebd1ff949792221499295fc3578aa57998646cfdd7eb49ebd704fa25d695d565bd54a7078c0be698857a1b92a9210dd444a75
+Description: debug symbols for evolution-plugin-spamassassin
+Auto-Built-Package: debug-symbols
+Build-Ids: 7e70658a5c576b612056d6a56e29e414609697f1
+
+Package: evolution-plugins
+Priority: optional
+Section: gnome
+Installed-Size: 438
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.38.3), libcanberra0 (>= 0.2), libebook-1.2-20 (>= 3.38.3), libebook-contacts-1.2-3 (>= 3.16.2), libecal-2.0-1 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libgdk-pixbuf-2.0-0 (>= 2.24.0), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.19.12), libical3 (>= 3.0.0), libnotify4 (>= 0.7.0), libunity9 (>= 3.4.6), libwebkit2gtk-4.0-37 (>= 2.28), libxml2 (>= 2.7.4), evolution (= 3.38.3-1+ztroyppa1)
+Recommends: notification-daemon
+Filename: pool/main/e/evolution/evolution-plugins_3.38.3-1+ztroyppa1_amd64.deb
+Size: 108300
+MD5sum: 705e1ed91fc983b8edf3b0603bd0539b
+SHA1: 387de0a6d135456099c457cf8b57eb4cee148791
+SHA256: 2aa3d4c5fe5fdaaccbff90417cc10d4ee8bc9f8c3da1b12e3028dade2298c799
+SHA512: b811d5083eaa7fda9fcd5b206681c77d1c9188ec5349e0a0be7cac665d99d99caa321470e8772aeead26d4ccb5e4721b5114a777b6a48dbcc9bc7e8ee23f79e1
+Description: standard plugins for Evolution
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package includes plugins for evolution. The plugins belong
+ to the set of "standard" plugins, which are useful, but not
+ necessary for a functioning application.
+ .
+ The following standard plugins are included.
+  - attachment-reminder
+  - bbdb
+  - dbx-import
+  - email-custom-header
+  - face
+  - mailing-list-actions
+  - mail-notification
+  - mail-to-task
+  - prefer-plain
+  - save-calendar
+  - templates
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugins-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 467
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution-plugins (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugins-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 341072
+MD5sum: 208770da61858ba440010bc9f823335a
+SHA1: 9c83dde082e60efc392313c3b3ea76e6e0dfbf81
+SHA256: d52c746fad2b351d7e6379cdd101cdaa470b8d7b3f877d8ea907a714a6e3f71f
+SHA512: 09dd923e6b3d107a083cf87901e939e3e55f28b36a9477169c7e2f3cc97f3ef4742b3f3033a7687f7fa89b1df63b85c78b2cf6744a8acb29218f9229704c6823
+Description: debug symbols for evolution-plugins
+Auto-Built-Package: debug-symbols
+Build-Ids: 0e2b18f4e5a5055ed1e59cea73a2d6cf1e6e62c8 14410a95928e1ef7d232e8def598b9efc64e713f 2dc9d2bd76d3b819afd6e249fb6c78d5f68b3a15 38fd6616e1543b3a16ce6d3d9258ea5c67f56ced 537efa7de32bf5583bf413cfa6f704f6a24ffa87 546c5e6f267b60e7956aca3626b58a6ca731ba9d 7d8e2ecc8658f73d8420d04e86f6aab3b05151a1 97c0761409e6d6e070c00e0baa814d5e16ae9be8 b21ead9fba4c2e21984002bfc4ec5c6bcd0403ae e142f1766b1a574a3aca1058e6768ac7f039389e f633e8c7db17080d392a677900350e36fcb3b34c
+
+Package: evolution-plugins-experimental
+Priority: optional
+Section: gnome
+Installed-Size: 75
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: libc6 (>= 2.4), libcamel-1.2-62 (>= 3.38.3), libevolution (>= 3.38.3), libevolution (<< 3.39), libglib2.0-0 (>= 2.46.0), libgtk-3-0 (>= 3.0.0), evolution (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugins-experimental_3.38.3-1+ztroyppa1_amd64.deb
+Size: 42484
+MD5sum: 8373d229e18dfc78a167a14e97bb01c0
+SHA1: d373047b3ff8be5b406775ee3ef5e3974b684408
+SHA256: e6b66cca69456eba73f8ec24d39955b8a8d212137f7248dfc2d4fe2fac56f185
+SHA512: abf3626a0f226fefba5eefa57245ac1a0b426735b907103278ad96484139224590aaecdc501de5359d49c12a621bc70b1a1e68816b3812ef75140715a279e73a
+Description: experimental plugins for Evolution
+ Evolution is a groupware suite which integrates mail, calendar,
+ address book, to-do list and memo tools.
+ .
+ This package includes plugins for Evolution. The plugins belong
+ to the set of "experimental" plugins, which are unsupported, have
+ undergone little testing, and might cause problems to the rest of
+ Evolution. Use with care.
+ .
+ The following plugins are included.
+  - external-editor
+  - contacts-map
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: evolution-plugins-experimental-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 43
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: evolution-plugins-experimental (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/evolution-plugins-experimental-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 27404
+MD5sum: 3524ed509a2e5fd003317b799550cc41
+SHA1: 1b8ee15b287115e9a9b69a397c0c3ba3c15bbb60
+SHA256: 4463f867d9b411d869fd341ad36dfeba0a01c7c51a60bdc7a7a8ac036fac1e45
+SHA512: 1920709047c61dcecf48f79b7bc36330a6807963b3e4a530036a0128fae39dbcf07afa1f9a75ca7cc36ac3138341e8af502a8515af192b4bc06e1076ce7af2ea
+Description: debug symbols for evolution-plugins-experimental
+Auto-Built-Package: debug-symbols
+Build-Ids: cb9b8a2ee32b807adb8592bd633378c163b84c5e
+
+Package: golang-github-containers-libpod-dev
+Priority: optional
+Section: admin
+Installed-Size: 10719
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: all
+Source: libpod
+Version: 3.0.1+dfsg1-3+ztroyppa1
+Depends: golang-dbus-dev (>= 5.0.2~), golang-ginkgo-dev, golang-github-appc-cni-dev (>= 0.8), golang-github-buger-goterm-dev, golang-github-checkpoint-restore-go-criu-dev, golang-github-containerd-cgroups-dev, golang-github-containernetworking-plugins-dev (>= 0.8.7), golang-github-containers-buildah-dev (>= 1.19), golang-github-containers-common-dev (>= 0.33.4), golang-github-containers-image-dev (>= 5.10), golang-github-containers-ocicrypt-dev, golang-github-containers-psgo-dev, golang-github-containers-storage-dev (>= 1.24), golang-github-coreos-bbolt-dev (>= 1.3.3~), golang-github-coreos-go-iptables-dev (>= 0.4.2~), golang-github-coreos-go-systemd-dev (>= 20~), golang-github-cyphar-filepath-securejoin-dev (>= 0.2.2~), golang-github-docker-distribution-dev (>= 2.7.1~), golang-github-docker-docker-dev (>= 20.10.0~), golang-github-docker-go-connections-dev (>= 0.4.0~), golang-github-docker-go-units-dev (>= 0.4.0~), golang-github-docker-spdystream-dev, golang-github-fullsailor-pkcs7-dev, golang-github-ghodss-yaml-dev, golang-github-google-shlex-dev, golang-github-google-uuid-dev, golang-github-hashicorp-go-multierror-dev, golang-github-influxdata-tail-dev (>= 1.0.0+git20180327.c434825-2~) | golang-github-hpcloud-tail-dev, golang-github-json-iterator-go-dev, golang-github-mrunalp-fileutils-dev, golang-github-opencontainers-go-digest-dev, golang-github-opencontainers-image-spec-dev, golang-github-opencontainers-runc-dev (>= 1.0.0~rc92~), golang-github-opencontainers-runtime-tools-dev (>= 0.9.0~), golang-github-opencontainers-selinux-dev (>= 1.2.2~), golang-github-openshift-api-dev, golang-github-openshift-imagebuilder-dev, golang-github-pkg-errors-dev, golang-github-pkg-profile-dev, golang-github-rootless-containers-rootlesskit-dev, golang-github-seccomp-containers-golang-dev, golang-github-seccomp-libseccomp-golang-dev, golang-github-sirupsen-logrus-dev, golang-github-stretchr-testify-dev, golang-github-uber-go-atomic-dev, golang-github-ulikunitz-xz-dev, golang-github-vbatts-tar-split-dev, golang-github-vishvananda-netlink-dev (>= 1.0.0+git20181030~), golang-github-vividcortex-ewma-dev, golang-go-zfs-dev, golang-go.opencensus-dev, golang-golang-x-crypto-dev, golang-golang-x-sys-dev, golang-golang-x-text-dev, golang-golang-x-xerrors-dev, golang-gomega-dev, golang-google-genproto-dev, golang-google-grpc-dev, golang-gopkg-inf.v0-dev, golang-gopkg-square-go-jose.v2-dev, golang-gopkg-yaml.v3-dev, golang-k8s-sigs-structured-merge-diff-dev, golang-toml-dev
+Filename: pool/main/libp/libpod/golang-github-containers-libpod-dev_3.0.1+dfsg1-3+ztroyppa1_all.deb
+Size: 1494656
+MD5sum: bdd23c265efcd15f82b8d0f66a9e2c54
+SHA1: 9a77bbc037ad94492c2e916ab7adbbfa8cb9a666
+SHA256: fc47e32d95a67387ca1e466808cde9735a7308c6973938f90bb57b47ae98f8d9
+SHA512: 1fab57472627b0710b27f606e9be14a3d69cb639e19897aadae85daf87611bd8f0cbaeaa425831caecad2b9642e7093fc4b8473b863a2e29219aa8a7307e393c
+Description: engine to run OCI-based containers in Pods (library)
+ Podman is an engine for running OCI-based containers in Pods.
+ Podman provides a CLI interface for managing Pods, Containers, and
+ Container Images.
+ .
+ At a high level, the scope of libpod and podman is the following:
+  * Support multiple image formats including the OCI and Docker image
+    formats.
+  * Support for multiple means to download images including trust & image
+    verification.
+  * Container image management (managing image layers, overlay filesystems,
+    etc).
+  * Full management of container lifecycle.
+  * Support for pods to manage groups of containers together.
+  * Resource isolation of containers and pods.
+  * Support for a Docker-compatible CLI interface through Podman.
+ .
+ Podman is a daemon-less alternative to Docker.
+ .
+ This package contains golang sources that other packages may require for
+ building.
+Homepage: https://github.com/containers/podman
+
+Package: libbluray-bdj
+Priority: optional
+Section: libs
+Installed-Size: 867
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: all
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libbluray2 (>= 1:1.2.1-4+ztroyppa1), libbluray2 (<< 1:1.2.1-4+ztroyppa1.1~), default-jre-headless | java2-runtime-headless
+Filename: pool/main/libb/libbluray/libbluray-bdj_1.2.1-4+ztroyppa1_all.deb
+Size: 754896
+MD5sum: 72118c537489d12e171056729031a7fa
+SHA1: dae14f5234d4c5deb5ffa11d9e1803d41c49d1cc
+SHA256: 60f4cfeb5ba00ab03a3018a35cd5f4f9bdeb3c199432f5c3cc24f277a3dd6760
+SHA512: 9f2bf578bd93ea16511b14c7372dcb8cbdff831473f06af91eea79a4b67267b806972e19e4b82b4d8446d73a6d36802e3a56ab11b24d3de1ac6756308ae26ca6
+Description: Blu-ray Disc Java support library (BD-J library)
+ libbluray is an open-source library designed for Blu-Ray Discs playback for
+ media players, like VLC or MPlayer. This research project is developed by an
+ international team of developers from Doom9. libbluray integrates navigation,
+ playlist parsing, menus, and BD-J.
+ .
+ NB: Most commercial Blu-Ray are restricted by AACS or BD+ technologies and this
+ library is not enough to playback those discs.
+ .
+ BD-J support is important because many of the advanced features and extra
+ content in Blu-ray movies uses BD-J. Programs designed to provide support for
+ those features must depend on this.
+ .
+ This package provides the BD-J library.
+Homepage: http://www.videolan.org/developers/libbluray.html
+Multi-Arch: foreign
+
+Package: libbluray-bin
+Priority: optional
+Section: utils
+Installed-Size: 93
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: amd64
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libbluray2 (= 1:1.2.1-4+ztroyppa1), libc6 (>= 2.10)
+Filename: pool/main/libb/libbluray/libbluray-bin_1.2.1-4+ztroyppa1_amd64.deb
+Size: 29168
+MD5sum: 85ca059110c919934dcaca0b02793608
+SHA1: a452506cd6d84c70d7b5cad12aed656a09c3535f
+SHA256: 812ea42d2e2a261dcf6e287c8c50922c4f9eccbc4bc51ec4f8ddb3258501f8d4
+SHA512: ddc1f86b22c358cc86b6b041b587307469eedbb0fff620279c1f7e2bb454dafa24cbbc5b403744d843f55c7c16c2650baae2ff7ffc32649ac021f6ec53479dee
+Description: Blu-ray disc playback support library (tools)
+ libbluray is an open-source library designed for Blu-Ray Discs playback for
+ media players, like VLC or MPlayer. This research project is developed by an
+ international team of developers from Doom9. libbluray integrates navigation,
+ playlist parsing, menus, and BD-J.
+ .
+ NB: Most commercial Blu-Ray are restricted by AACS or BD+ technologies and this
+ library is not enough to playback those discs.
+ .
+ This package provides a simple tool to retrieve information about a Blu-ray.
+Homepage: http://www.videolan.org/developers/libbluray.html
+
+Package: libbluray-bin-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 52
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: amd64
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libbluray-bin (= 1:1.2.1-4+ztroyppa1)
+Filename: pool/main/libb/libbluray/libbluray-bin-dbgsym_1.2.1-4+ztroyppa1_amd64.deb
+Size: 19944
+MD5sum: 8f151d4b054fd659c64e789326e7ed15
+SHA1: fbe07949006bff139e6a7f8f65823515c10d2920
+SHA256: 8869230bf006c7639ef17e66d70ee4f99b9e88400d737ff280e816c11055fca2
+SHA512: 087b430e9d96c915c570ebcdc3d11a112702a36e79872f1c0368394c23d130f0aa5e84b6f71464cebf6e7ef54e95b4a6debb17aa5419a18b5eceaf1807a99e15
+Description: debug symbols for libbluray-bin
+Auto-Built-Package: debug-symbols
+Build-Ids: 1fcd76220ad894141ebfcde71a6e2bda7f6b4f7f 342f8027dc50062ff5833a31db4c36ad9e5e86f3 3eeff34db281a94a1d4378fb90daf4e524ae3507
+
+Package: libbluray-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 715
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: amd64
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libbluray2 (= 1:1.2.1-4+ztroyppa1), libfreetype-dev, libfontconfig-dev, libudfread-dev (>= 1.1.1), libxml2-dev
+Filename: pool/main/libb/libbluray/libbluray-dev_1.2.1-4+ztroyppa1_amd64.deb
+Size: 170648
+MD5sum: ca78331779d0d16bad6c0ffa42653d3b
+SHA1: 6aff82ce31d5f5ae7b4f7156602be63966aa47df
+SHA256: ea8306737e5e31f6a36a87147abc4d281f637580719a8effcdcf67787fee1d4a
+SHA512: 03aa5db561c982b310f5958bf87edf30e65b3367460f75bebaec5efcf81680985ad8133457a8e596a614f06ff2e60e50271dc196c3ad6c8eb4ecb104104373ee
+Description: Blu-ray disc playback support library (development files)
+ libbluray is an open-source library designed for Blu-Ray Discs playback for
+ media players, like VLC or MPlayer. This research project is developed by an
+ international team of developers from Doom9. libbluray integrates navigation,
+ playlist parsing, menus, and BD-J.
+ .
+ NB: Most commercial Blu-Ray are restricted by AACS or BD+ technologies and this
+ library is not enough to playback those discs.
+ .
+ This package provides the necessary files needed for development.
+Homepage: http://www.videolan.org/developers/libbluray.html
+Multi-Arch: same
+
+Package: libbluray-doc
+Priority: optional
+Section: doc
+Installed-Size: 818
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: all
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Filename: pool/main/libb/libbluray/libbluray-doc_1.2.1-4+ztroyppa1_all.deb
+Size: 134068
+MD5sum: 349df1c887b342daaa6e5a33eb58f7fe
+SHA1: 6c7d61a5584ed97e458e35ee38ec03df05d99f8b
+SHA256: f97ed84e7f4085b8af9263b04b7e80a65b94f8d721d051937ed78f72e47ff631
+SHA512: b32b5966877904de6ba20417641fe896c6098abae3c04db5c07e7dd56ed20f0b7ef76c357f28f656325918e98995e6a070814771d16a560163e940550c36aa87
+Description: Blu-ray disc playback support library (documentation)
+ libbluray is an open-source library designed for Blu-Ray Discs playback for
+ media players, like VLC or MPlayer. This research project is developed by an
+ international team of developers from Doom9. libbluray integrates navigation,
+ playlist parsing, menus, and BD-J.
+ .
+ NB: Most commercial Blu-Ray are restricted by AACS or BD+ technologies and this
+ library is not enough to playback those discs.
+ .
+ This package provides the libbluray documentation.
+Homepage: http://www.videolan.org/developers/libbluray.html
+Multi-Arch: foreign
+
+Package: libbluray2
+Priority: optional
+Section: libs
+Installed-Size: 345
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: amd64
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libudfread0 (>= 1.1.1), libxml2 (>= 2.7.4)
+Recommends: libaacs0
+Suggests: libbluray-bdj
+Filename: pool/main/libb/libbluray/libbluray2_1.2.1-4+ztroyppa1_amd64.deb
+Size: 139028
+MD5sum: 5f6c4ed74cb207c0ccf21acc9e2804d3
+SHA1: d27941f2421ee47834cae4e28c70de593eee5fe0
+SHA256: e5ba866b8c74d59f6e772d5a552fccfe33d10306da77ed1ad296b865868092c5
+SHA512: 595fcae0b7c3e86ba0b4c39a10c5b0eaf5950556f21ef48729146f0e07936edb71b56ae95e109819d92bd3d19de188090251ad431dbf81d0bf930350660d849e
+Description: Blu-ray disc playback support library (shared library)
+ libbluray is an open-source library designed for Blu-Ray Discs playback for
+ media players, like VLC or MPlayer. This research project is developed by an
+ international team of developers from Doom9. libbluray integrates navigation,
+ playlist parsing, menus, and BD-J.
+ .
+ NB: Most commercial Blu-Ray are restricted by AACS or BD+ technologies and this
+ library is not enough to playback those discs.
+ .
+ This package provides the shared library.
+Homepage: http://www.videolan.org/developers/libbluray.html
+Multi-Arch: same
+
+Package: libbluray2-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 407
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Architecture: amd64
+Source: libbluray
+Version: 1:1.2.1-4+ztroyppa1
+Depends: libbluray2 (= 1:1.2.1-4+ztroyppa1)
+Filename: pool/main/libb/libbluray/libbluray2-dbgsym_1.2.1-4+ztroyppa1_amd64.deb
+Size: 383496
+MD5sum: cc53617966672b94bb1036a1c8f5f22d
+SHA1: 36623cd7cd42b8b346578da71036651f677dd3b7
+SHA256: 0d60e8eaad2aeab672e37de6effac2def47949d3faea596c4c8c1a8bf86dd972
+SHA512: 5cec72b585aec7c6f2ebec15af029ea04300a1592c5a8ff8085dee2bf093f731bf8b41959a84ac6ba3485285ab30f30830b58c60229ac154416afe225bf91c23
+Description: debug symbols for libbluray2
+Auto-Built-Package: debug-symbols
+Build-Ids: 079092c5e88061fc7cb3911c76f7cd94355b7554
+Multi-Arch: same
+
+Package: libevolution
+Priority: optional
+Section: libs
+Installed-Size: 9177
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.29), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libcamel-1.2-62 (>= 3.38.3), libcanberra0 (>= 0.2), libchamplain-0.12-0 (>= 0.11.0), libchamplain-gtk-0.12-0 (>= 0.11.0), libclutter-1.0-0 (>= 1.10.0), libebook-1.2-20 (>= 3.38.3), libebook-contacts-1.2-3 (>= 3.16.2), libecal-2.0-1 (>= 3.38.3), libedataserver-1.2-25 (>= 3.38.3), libedataserverui-1.2-2 (>= 3.38.3), libenchant-2-2 (>= 2.2.3), libgail-3-0 (>= 3.0.2), libgcr-base-3-1 (>= 3.8.0), libgcr-ui-3-1 (>= 3.8.0), libgdk-pixbuf-2.0-0 (>= 2.24.0), libgeocode-glib0 (>= 3.10), libglib2.0-0 (>= 2.55.2), libgnome-autoar-0-0 (>= 0.1.1), libgnome-autoar-gtk-0-0 (>= 0.1.1), libgnome-desktop-3-19 (>= 3.17.92), libgspell-1-2 (>= 1.8.2), libgtk-3-0 (>= 3.22.6), libgweather-3-16 (>= 3.10.0), libical3 (>= 3.0.0), libjavascriptcoregtk-4.0-18, libldap-2.4-2 (>= 2.4.7), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.13.4-2~), libpango-1.0-0 (>= 1.37.2), libpangocairo-1.0-0 (>= 1.14.0), libsecret-1-0 (>= 0.7), libsoup2.4-1 (>= 2.42), libsqlite3-0 (>= 3.5.9), libwayland-server0 (>= 1.0.2), libwebkit2gtk-4.0-37 (>= 2.28), libxml2 (>= 2.7.4), libytnef0 (>= 0.0.0), evolution-common (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/libevolution_3.38.3-1+ztroyppa1_amd64.deb
+Size: 2503760
+MD5sum: 8d9dbcb20e6bb5a59ed9afb6db93fb64
+SHA1: 2a3d1dff90d94a42f09dff7b660b963fdf1cc1bb
+SHA256: 853430526e86a3f1a52cfdceebc5fbb7d3cca731c3a135fd47b50392be021515
+SHA512: 049d152f16377abb52a284aeb2723b3066e0c76c50cb7715fbb331a059c4e842b7fe32e1aed64e6b8dd989aff4dd11b831016938fdc7861205f9c99d613e1f6a
+Description: evolution libraries
+ This package contains libraries used by Evolution.
+Homepage: https://wiki.gnome.org/Apps/Evolution
+
+Package: libevolution-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 15832
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: evolution
+Version: 3.38.3-1+ztroyppa1
+Depends: libevolution (= 3.38.3-1+ztroyppa1)
+Filename: pool/main/e/evolution/libevolution-dbgsym_3.38.3-1+ztroyppa1_amd64.deb
+Size: 13807292
+MD5sum: 0a10469f1be5447655be766d22f08bf5
+SHA1: 78c21530bb07c12a9098532fdefb8af72b1892f8
+SHA256: cf383196946525fa403b32d6f40885362620dfece05d93939fc56a38f689acd6
+SHA512: 7d0dedefe61185a7aba0273acfd5c2c203565f6ed8ce5869f088402c5f438dafb58760be3bd90f7432782200177d6517a319fc1b1c62a406119abb74f896f5a6
+Description: debug symbols for libevolution
+Auto-Built-Package: debug-symbols
+Build-Ids: 0093308285daa427a34957c11dfbf8f87cd193fa 018e36a7b3482f5434e8a8cd4adc1dadaf67b901 03584175dc817fb5aa9bb10284704566340acd36 040cf164c4a163588c56dc22339a1692b880c99d 04bd66e8eade2de0ada837197d9f9faca42b0e96 08617c05b31c03af7385c22f6a58a719ba971eff 0a3439266d10a00b32c0fc8f0acf608a215c9315 0d19c7a7f604522d61f77b9fec16c7ab6d4e0868 0d2ecc573e3d6fd765f349fd02df9e9d5870ef0f 0d834b72fd887cdc97c3fcf0899848d3b33b47ee 0e9ea863547b2e3478969167fabe7e1c3eb9f550 129ed3a47fa84a1bfb1128f5fede2bd1bbb48182 16a0a8e664ee6b2a2d8bc03d7222fc99794b1621 17a848f8d926642fbdb48281173a3abc76d23123 1e0b18076f7c0fdb6001400d7400537730b084c7 1f856342d73b30297d167a24832e5f37d2aa2b78 2155d527ea1e66827716bb93a0e24dad63784281 2fa810159ea0d04e0284a21f2324c9cc2dd9e600 348b003aea1f6aa0872a5fe2977a22e052805d1f 3b97c78a7e85a94b8900383e4c79f6c9a8e960d7 3d752c0c1941be82625278dbdaadd8e0c4fee23b 3e92f1a48f2721f2a00e84b844caa83e7a3c3e35 428890e4595c9d1689388af3a641294b663f6d32 467c4c22f757de2981b578022f034c5ddcc3cd5d 46e173d36eacbe271d93e42ba43c60bca76d23bd 56e3883048979feb8fa92e8d33ffc3e1b559cb0c 639d311680cbb261ab85ec1c805abfb75ff63b69 68bd07fb723fe694aa45a5e6e3a4016268b65894 7400b8707083ac0c333b4e6c34a52dae350223b9 74a51740e6cebd5cbf34bb16e421d5cd6c3e44dc 78cbcba7d602cc1fc0388b5df6ff5bc8570baee4 79e1b0e0b1a2d5b7fe759b88e07fe87e51a9fb2e 7e231856eb59b807bc8dd940b4f464fe395e3751 803d75eb1ccb82cd330aecf9874c8c43e25f8e65 83e68addce092c10917ef21e9e8fc8bf9aabf4dc 8c9172059496fd25db39bb502afd6f933bde490a 929372b4f6ee806fe8c0b17f2b54310ed531ce12 9f9c0eca8d1425f07fc705d74d7e1317d46cbac0 a16b5484580b1226ff87d7b505131f2503defd23 a48fd33a475333518831dde6c92a4a7ab13d725e a84788595a9f4b1cbe98cac985f7761bdc22e4ab ac56f21873665b342aeac81a2b31c58a6da2db93 b4a882997c635a44880b4693e1562022cd759a66 c5df87d1e7621e1833ffcf4ab7548ff3447da68f c71bd5eb8a973399c42a3abc1b0f109c8cddf285 cf3850a9476d7d83e179ecaea29f779e1543314c d128770b49d7db3476958bd07eee3bca695fa506 d16eab2660bef18cc8422631078e3d629f25aba3 d2558ec81b43ac4ce573f151d03a9ac98fc656c6 db371f086d8409c670a4f1f96d6b35452330fb32 db6e65ac95dd924d9e90bf480f688889ca6a45ee dc73046c9f31ca335763605ab2c69d7a62e067f0 e008d096899ac151f4d5566e58c29fd2eccaa4b7 e2bb5757f4cb9353a63a94926dba6db5b603e204 e4d5ec9d23c14a02c8a3f5e6bf38a20327d0aca8 e5ad9cfc1480863bed31e27cd6648da51f73c5dc e694015a08503c6138d29074e7bc78da63316945 ef94903c22433f640aeb84a7e2bea93456688d94 fc7b993b40391f13a12a4e84a14ee406ebb3e026
+
+Package: podman
+Priority: optional
+Section: admin
+Installed-Size: 36403
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: libpod
+Version: 3.0.1+dfsg1-3+ztroyppa1
+Depends: init-system-helpers (>= 1.52), libc6 (>= 2.15), libdevmapper1.02.1 (>= 2:1.02.97), libgpgme11 (>= 1.4.1), libseccomp2 (>= 2.4.1), conmon (>= 2.0.18~), containernetworking-plugins (>= 0.8.7), golang-github-containers-common, crun | runc (>= 1.0.0~rc92~), iptables
+Recommends: buildah (>= 1.10.1-6~), fuse-overlayfs (>= 1.0.0~), slirp4netns (>= 0.4.1~), catatonit | tini | dumb-init, uidmap, golang-github-containernetworking-plugin-dnsname
+Suggests: containers-storage, docker-compose
+Breaks: buildah (<< 1.10.1-6), fuse-overlayfs (<< 0.7.1), slirp4netns (<< 0.4.1)
+Filename: pool/main/libp/libpod/podman_3.0.1+dfsg1-3+ztroyppa1_amd64.deb
+Size: 9516436
+MD5sum: 72f03964fbec415d504e8ba646da2160
+SHA1: 3b9c577f5c5ffec9c2e8f09f352084faccbdac4d
+SHA256: b329d6358b91187d1a50328c65d44987228b664e25ed1eb3a1aef9e56b891d05
+SHA512: 8c81dfe3b5712f5f68e9d334029b3ff8befdea40cdb93545eea5f0241adb7dbbcf9b8eae5b68db448a9152fcc2bc1c8c71ce63d5b8425f23d8923d0c4094c5b1
+Description: engine to run OCI-based containers in Pods
+ Podman is an engine for running OCI-based containers in Pods.
+ Podman provides a CLI interface for managing Pods, Containers, and
+ Container Images.
+ .
+ At a high level, the scope of libpod and podman is the following:
+  * Support multiple image formats including the OCI and Docker image
+    formats.
+  * Support for multiple means to download images including trust & image
+    verification.
+  * Container image management (managing image layers, overlay filesystems,
+    etc).
+  * Full management of container lifecycle.
+  * Support for pods to manage groups of containers together.
+  * Resource isolation of containers and pods.
+  * Support for a Docker-compatible CLI interface through Podman.
+ .
+ Podman is a daemon-less alternative to Docker.
+Built-Using: containerd (= 1.4.5~ds1-2), continuity (= 0.0~git20201208.1805252-2), docker-registry (= 2.7.1+ds2-7), docker.io (= 20.10.5+dfsg1-1), golang-1.15 (= 1.15.9-6), golang-dbus (= 5.0.3-2), golang-fsnotify (= 1.4.9-2), golang-ginkgo (= 1.14.2-1), golang-github-acarl005-stripansi (= 0.0~git20180116.5a71ef0-2), golang-github-appc-cni (= 0.8.1-1), golang-github-beorn7-perks (= 1.0.1-1), golang-github-blang-semver (= 3.6.1-2), golang-github-buger-goterm (= 0.0+git20181115.c206103-2), golang-github-cespare-xxhash (= 2.1.1-1), golang-github-checkpoint-restore-go-criu (= 4.1.0-3), golang-github-chzyer-readline (= 1.4.39.g2972be2-1), golang-github-containernetworking-plugins (= 0.9.0-1), golang-github-containers-buildah (= 1.19.6+dfsg1-1), golang-github-containers-common (= 0.33.4+ds1-1), golang-github-containers-image (= 5.10.3-1), golang-github-containers-ocicrypt (= 1.0.3-1), golang-github-containers-psgo (= 1.5.2-1), golang-github-containers-storage (= 1.24.8+dfsg1-1), golang-github-coreos-bbolt (= 1.3.5-1), golang-github-coreos-go-iptables (= 0.5.0-1), golang-github-coreos-go-systemd (= 22.1.0-3), golang-github-cyphar-filepath-securejoin (= 0.2.2-2), golang-github-davecgh-go-spew (= 1.1.1-2), golang-github-docker-docker-credential-helpers (= 0.6.3-1), golang-github-docker-go-connections (= 0.4.0-3), golang-github-docker-go-metrics (= 0.0.1-1), golang-github-docker-go-units (= 0.4.0-3), golang-github-docker-libtrust (= 0.0~git20150526.0.9cbd2a1-3.1), golang-github-docker-spdystream (= 0.2.0-1), golang-github-fsouza-go-dockerclient (= 1.6.6-1), golang-github-fullsailor-pkcs7 (= 0.0~git20190404.d7302db-2), golang-github-ghodss-yaml (= 1.0.0-1.1), golang-github-google-gofuzz (= 1.2.0-1), golang-github-google-shlex (= 0.0~git20191202.e7afc7f-1), golang-github-google-uuid (= 1.2.0-1), golang-github-gorilla-mux (= 1.7.4-1), golang-github-hashicorp-errwrap (= 1.1.0-1), golang-github-hashicorp-go-multierror (= 1.1.0-1), golang-github-influxdata-tail (= 1.0.0+git20180327.c434825-4), golang-github-ishidawataru-sctp (= 0.0+git20190723.7c296d4-3), golang-github-json-iterator-go (= 1.1.10-2), golang-github-juju-ansiterm (= 0.0~git20161107.35c59b9-3), golang-github-klauspost-compress (= 1.11.7-2), golang-github-klauspost-pgzip (= 1.2.5-1), golang-github-lunixbochs-vtclean (= 1.0.0-1), golang-github-manifoldco-promptui (= 0.8.0-2), golang-github-mattn-go-colorable (= 0.1.7-1), golang-github-mattn-go-isatty (= 0.0.12-1), golang-github-moby-sys (= 0.0~git20201113.5a29239-1), golang-github-moby-term (= 0.0~git20201110.bea5bbe-1), golang-github-modern-go-concurrent (= 1.0.3-1.1), golang-github-modern-go-reflect2 (= 1.0.1-1), golang-github-morikuni-aec (= 1.0.0-2), golang-github-opencontainers-go-digest (= 1.0.0-1), golang-github-opencontainers-image-spec (= 1.0.1-5), golang-github-opencontainers-runtime-tools (= 0.9.0+dfsg-2), golang-github-opencontainers-selinux (= 1.8.0-1), golang-github-opencontainers-specs (= 1.0.2.41.g7413a7f-1), golang-github-openshift-imagebuilder (= 1.1.6-2), golang-github-opentracing-opentracing-go (= 1.2.0-1), golang-github-pkg-errors (= 0.9.1-1), golang-github-pmezard-go-difflib (= 1.0.0-3), golang-github-pquerna-ffjson (= 0.0~git20181028.e517b90-1.1), golang-github-proglottis-gpgme (= 0.1.1-1), golang-github-prometheus-client-golang (= 1.9.0-2), golang-github-prometheus-client-model (= 0.2.0-2), golang-github-prometheus-common (= 0.15.0-2), golang-github-prometheus-procfs (= 0.3.0-2), golang-github-safchain-ethtool (= 0.0~git20201023.874930c-1), golang-github-spf13-cobra (= 1.1.2-1), golang-github-spf13-pflag (= 1.0.5-2), golang-github-ulikunitz-xz (= 0.5.6-2), golang-github-vbatts-tar-split (= 0.11.1-2), golang-github-vbauerster-mpb (= 5.0.3-2), golang-github-vishvananda-netlink (= 1.1.0-2), golang-github-vishvananda-netns (= 0.0~git20200728.db3c7e5-1), golang-github-vividcortex-ewma (= 1.1.1-2), golang-github-willf-bitset (= 1.1.11-1), golang-github-xeipuuv-gojsonpointer (= 0.0~git20190905.02993c4-1), golang-github-xeipuuv-gojsonreference (= 0.0~git20180127.bd5ef7b-2), golang-github-xeipuuv-gojsonschema (= 1.2.0-1), golang-go-patricia (= 2.2.6-5), golang-go-zfs (= 2.1.1.49.gf784269-1), golang-go.crypto (= 1:0.0~git20201221.eec23a3-1), golang-go.uber-atomic (= 1.4.0-1), golang-gocapability-dev (= 0.0+git20200815.42c35b4-1), golang-gogoprotobuf (= 1.3.2-1), golang-golang-x-net (= 1:0.0+git20210119.5f4716e+dfsg-4), golang-golang-x-oauth2 (= 0.0~git20190604.0f29369-2), golang-golang-x-sync (= 0.0~git20210220.036812b-1), golang-golang-x-sys (= 0.0~git20210124.22da62e-1), golang-golang-x-term (= 0.0~git20201210.2321bbc-1), golang-golang-x-text (= 0.3.6-1), golang-golang-x-time (= 0.0+git20200630.3af7569-1), golang-golang-x-xerrors (= 0.0~git20191204.9bdfabe-1), golang-gomega (= 1.10.3-1), golang-google-genproto (= 0.0~git20200413.b5235f6-1), golang-google-grpc (= 1.27.1-1), golang-gopkg-inf.v0 (= 0.9.1-1), golang-gopkg-square-go-jose.v2 (= 2.5.1-2), golang-gopkg-tomb.v1 (= 0.0~git20141024.0.dd63297-7), golang-goprotobuf (= 1.3.4-2), golang-k8s-sigs-structured-merge-diff (= 4.0.2+ds1-2), golang-k8s-sigs-yaml (= 1.2.0-3), golang-logrus (= 1.7.0-2), golang-protobuf-extensions (= 1.0.1-1), golang-toml (= 0.3.1-1), golang-yaml.v2 (= 2.4.0-1), rootlesskit (= 0.14.2-1), runc (= 1.0.0~rc93+ds1-5)
+Homepage: https://github.com/containers/podman
+
+Package: podman-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 13629
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Source: libpod
+Version: 3.0.1+dfsg1-3+ztroyppa1
+Depends: podman (= 3.0.1+dfsg1-3+ztroyppa1)
+Filename: pool/main/libp/libpod/podman-dbgsym_3.0.1+dfsg1-3+ztroyppa1_amd64.deb
+Size: 9559884
+MD5sum: cdd4b7de2f1c368a3ed0811739151e11
+SHA1: fa2d47da0dfd103b2bc0c7788bbda6cb814a007f
+SHA256: c423f82e57c936534d9a287cfe10204b44379e06c9dcdfb67de93c69b137d416
+SHA512: 24982927b97471f4ea2341ed702ad892bd2d94d79608d1aaf0a6b5a0ab2c173bf6a13572261d7284b4986f8c326688ed48556e5dfd39f7bfccef214d9a21d520
+Description: debug symbols for podman
+Auto-Built-Package: debug-symbols
+Build-Ids: 21d4e16d995c203338b08772ff2ce87194cbb0ee
+
+Package: run-one
+Priority: optional
+Section: admin
+Installed-Size: 29
+Maintainer: Dustin Kirkland <kirkland@ubuntu.com>
+Architecture: all
+Version: 1.18+ztroyppa1
+Replaces: bikeshed (<< 1.8)
+Depends: procps
+Breaks: bikeshed (<< 1.8)
+Filename: pool/main/r/run-one/run-one_1.18+ztroyppa1_all.deb
+Size: 6624
+MD5sum: 69551fff5bffa97868c3e9ac7433d367
+SHA1: 8427ab1704426c2a9fc1a19f945d09ff1f4d53d6
+SHA256: 1213c113b88aa66dab880a9291ae2a9b648dff8d220e5d1bf9ffaf80c2fe4556
+SHA512: 77d5a19ff4ac88bf053bc55e51fb4907f74a69b7065e96cdcae85489305951ac83c0e8abef5369b2c4e8b077a84854b0fd44e0b2223c3b21faabaa945088b267
+Description: run just one instance of a command and its args at a time
+ This utility will run just one instance at a time of some command and
+ unique set of arguments (useful for cronjobs, eg).
+Enhances: anacron, cron
+Homepage: http://launchpad.net/run-one
+
