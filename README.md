@@ -28,7 +28,3 @@ Debian bullseye version of evolution does not [fully support the python SDK for 
 ### `evolution`
 
 Debian bullseye version of evolution does not allow [editing of meetings which you do not own](https://gitlab.gnome.org/GNOME/evolution/-/issues/992). Fix is already upstream in 3.39.2+, so this build will likely not be needed if a bookworm backport is published.
-
-## Repo Setup
-
-The only manual change made to support the build & publishing of the repo is to enable GitHub Spaces for it (pointing at the `main` branch).
